@@ -1,8 +1,9 @@
 # Issue Tracker Project
 
-Building a Issue Tracker Project using Nextjs, Radix, And Prisma
+Building an Issue Tracker Project using Nextjs, Radix, And Prisma
 
-<!-- Image Section -->
+![Issue Tracker Image](https://github.com/nuhptr/issue-tracker/assets/50306963/e02f2fb9-57a9-42c4-96d9-9837b5589509)
+
 
 ## Dependencies
 
@@ -18,3 +19,5 @@ Building a Issue Tracker Project using Nextjs, Radix, And Prisma
 -  [@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers) - npm install @hookform/resolvers (for form validation)
 
 ## Taking Notes
+
+- Create schema validation files separatedly. It's easy to add new validation in another file
