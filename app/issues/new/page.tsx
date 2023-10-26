@@ -12,7 +12,9 @@ import SimpleMdeReact from "react-simplemde-editor"
 import "easymde/dist/easymde.min.css"
 
 import { createIssueSchema } from "@/app/validationSchema"
+
 import ErrorMessage from "@/app/components/ErrorMessage"
+import Spinner from "@/app/components/Spinner"
 
 type IssueForm = z.infer<typeof createIssueSchema>
 
@@ -26,13 +28,15 @@ export default function NewIssuePage() {
    } = useForm<IssueForm>({ resolver: zodResolver(createIssueSchema) })
 
    const [error, setError] = useState<string | null>(null)
+   const [isSubmitting, setSubmitting] = useState<boolean>(false)
 
    const onSubmit = async (data: IssueForm) => {
       try {
-         console.log(data)
+         setSubmitting(true)
          await axios.post("/api/issues", data)
          router.push("/issues")
       } catch (error) {
+         setSubmitting(false)
          setError("Please fill out all fields / try again later")
       }
    }
@@ -58,7 +62,9 @@ export default function NewIssuePage() {
             />
             {errors.description && <ErrorMessage>{errors.description?.message}</ErrorMessage>}
 
-            <Button>Submit New Issue</Button>
+            <Button className="!p-5" disabled={isSubmitting}>
+               Submit {isSubmitting && <Spinner />}
+            </Button>
          </form>
       </div>
    )
