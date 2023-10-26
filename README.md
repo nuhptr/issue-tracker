@@ -15,5 +15,6 @@ Building a Issue Tracker Project using Nextjs, Radix, And Prisma
 -  [react-simplemde-editor](https://www.npmjs.com/package/react-simplemde-editor) - npm install react-simplemde-editor easymde(for markdown editor)
 -  [react-hook-form](https://react-hook-form.com/) - npm install react-hook-form@latest (for form validation)
 -  [axios](https://www.npmjs.com/package/axios) - npm install axios (for fetching data)
+-  [@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers) - npm install @hookform/resolvers (for form validation)
 
 ## Taking Notes
