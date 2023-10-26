@@ -2,8 +2,7 @@
 
 Building an Issue Tracker Project using Nextjs, Radix, And Prisma
 
-![Issue Tracker Image](https://github.com/nuhptr/issue-tracker/assets/50306963/e02f2fb9-57a9-42c4-96d9-9837b5589509)
-
+![Issue Tracker Image](https://github.com/nuhptr/issue-tracker/assets/50306963/ebfea712-1073-44a8-a005-e4ff45652064)
 
 ## Dependencies
 
