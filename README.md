@@ -12,5 +12,6 @@ Building a Issue Tracker Project using Nextjs, Radix, And Prisma
    -  npx prisma migrate dev (for database migration)
 -  [zod](https://www.npmjs.com/package/zod) - npm install zod (for validation)
 -  [radix-ui](https://www.radix-ui.com/) - npm install @radix-ui/themes (for components)
+-  [react-simplemde-editor](https://www.npmjs.com/package/react-simplemde-editor) - npm install react-simplemde-editor easymde(for markdown editor)
 
 ## Taking Notes
