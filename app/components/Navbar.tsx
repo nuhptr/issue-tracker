@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation"
 import { AiFillBug } from "react-icons/ai"
 import classNames from "classnames"
 
-const Navbar = () => {
+export default function Navbar() {
    const currentPath = usePathname()
 
    const links = [
@@ -35,5 +35,3 @@ const Navbar = () => {
       </nav>
    )
 }
-
-export default Navbar
